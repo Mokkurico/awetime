@@ -1,22 +1,12 @@
-package me.aweti.backend
+package me.awetime.backend
 
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.request.*
 import io.ktor.routing.*
 import io.ktor.http.*
-import io.ktor.content.*
-import io.ktor.http.content.*
-import io.ktor.auth.*
 import io.ktor.gson.*
 import io.ktor.features.*
-import io.ktor.client.*
-import io.ktor.client.features.json.*
-import io.ktor.client.request.*
-import kotlinx.coroutines.*
-import io.ktor.client.features.logging.*
-import io.ktor.client.features.UserAgent
-import io.ktor.client.features.BrowserUserAgent
 import kotlin.test.*
 import io.ktor.server.testing.*
 

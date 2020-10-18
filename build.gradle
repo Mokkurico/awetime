@@ -11,7 +11,7 @@ buildscript {
 apply plugin: 'kotlin'
 apply plugin: 'application'
 
-group 'me.aweti.backend'
+group 'me.awetime.backend'
 version '0.0.1'
 mainClassName = "io.ktor.server.netty.EngineMain"
 
@@ -26,7 +26,6 @@ repositories {
     mavenLocal()
     jcenter()
     maven { url 'https://kotlin.bintray.com/ktor' }
-    maven { url 'https://kotlin.bintray.com/kotlinx' }
 }
 
 dependencies {
@@ -34,13 +33,6 @@ dependencies {
     implementation "io.ktor:ktor-server-netty:$ktor_version"
     implementation "ch.qos.logback:logback-classic:$logback_version"
     implementation "io.ktor:ktor-server-core:$ktor_version"
-    implementation "io.ktor:ktor-server-host-common:$ktor_version"
-    implementation "io.ktor:ktor-auth:$ktor_version"
     implementation "io.ktor:ktor-gson:$ktor_version"
-    implementation "io.ktor:ktor-client-core:$ktor_version"
-    implementation "io.ktor:ktor-client-core-jvm:$ktor_version"
-    implementation "io.ktor:ktor-client-json-jvm:$ktor_version"
-    implementation "io.ktor:ktor-client-gson:$ktor_version"
-    implementation "io.ktor:ktor-client-logging-jvm:$ktor_version"
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
 }
